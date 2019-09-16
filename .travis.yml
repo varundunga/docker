@@ -5,8 +5,8 @@ services:
 before_install:
   - docker build -t prod .
 
-script:
-  - docker run prod
+# script:
+  # - docker run prod
 
 deploy:
   provider: elasticbeanstalk
