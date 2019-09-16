@@ -4,8 +4,8 @@ services:
 before_install:
   - docker build -t prod .
 
-script:
-  - docker run prod npm run test -- --coverage
+# script:
+#   - docker run prod npm run test -- --coverage
 
 deploy:
   provider: elasticbeanstalk
