@@ -2,7 +2,7 @@ sudo: required
 services:
   - docker
 before_install:
-  - docker build Dockerfile -t prod .
+  - docker build -t prod .
 
 script:
   - docker run prod npm run test -- --coverage
